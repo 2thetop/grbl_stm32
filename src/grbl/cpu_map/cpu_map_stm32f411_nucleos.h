@@ -147,32 +147,35 @@
 #define PROBE_BIT       0  // Uno Analog Pin 5
 #define PROBE_MASK      (1<<PROBE_BIT)
 
-#define DIRX     GPIOB,GPIO_Pin_5
-#define STPX     GPIOB,GPIO_Pin_3
-#define DIRY     GPIOA,GPIO_Pin_8
-#define STPY     GPIOC,GPIO_Pin_7
-#define STPZ     GPIOB,GPIO_Pin_10
-#define DIRZ     GPIOB,GPIO_Pin_4
+#define DIRZ     GPIOA,GPIO_Pin_8//
+#define DIRY     GPIOB,GPIO_Pin_10//
+#define DIRX     GPIOB,GPIO_Pin_4//
 
-#define SPI1SCK  GPIOA,GPIO_Pin_5
-#define SPI1MOSI GPIOA,GPIO_Pin_7
-#define SPI1MISO GPIOA,GPIO_Pin_6
-#define SPI1NSS  GPIOB,GPIO_Pin_6
+#define STPZ     GPIOB,GPIO_Pin_5
+#define STPY     GPIOB,GPIO_Pin_3 //
+#define STPX     GPIOA,GPIO_Pin_10
 
-#define STP_RST GPIOA,GPIO_Pin_9
-#define STP_FLG GPIOA,GPIO_Pin_10
+#define STEPEN   GPIOA,GPIO_Pin_9
+
+#define SPI1SCK GPIOB,GPIO_Pin_10//SPI2SCK
+#define SPI1MOSI GPIOC,GPIO_Pin_3//SPI2MOSI
+#define SPI1MISO GPIOC,GPIO_Pin_2//SPI2MISO
+#define SPI1NSS GPIOB,GPIO_Pin_12//SPI2NSS
+
+#define STP_RST GPIOA,GPIO_Pin_0
+#define STP_FLG GPIOB,GPIO_Pin_13
 
 #define TESTP GPIOB,GPIO_Pin_8
 
-#define LIMX GPIOA,GPIO_Pin_0
-#define LIMY GPIOA,GPIO_Pin_1
-#define LIMZ GPIOA,GPIO_Pin_4
+#define LIMX GPIOC,GPIO_Pin_7//GPIOA,GPIO_Pin_0
+#define LIMY GPIOB,GPIO_Pin_6//GPIOA,GPIO_Pin_1
+#define LIMZ GPIOA,GPIO_Pin_7//GPIOA,GPIO_Pin_4
 
-#define PROBE GPIOC,GPIO_Pin_1
+#define PROBE GPIOC,GPIO_Pin_0//GPIOC,GPIO_Pin_1
 
 #ifndef VARIABLE_SPINDLE
-#define SPINDLE_EN   GPIOC,GPIO_Pin_1
-#define SPINDLE_DIR  GPIOC,GPIO_Pin_1
+#define SPINDLE_EN   GPIOA,GPIO_Pin_6//GPIOC,GPIO_Pin_1
+#define SPINDLE_DIR  GPIOA,GPIO_Pin_5//GPIOC,GPIO_Pin_1
 #endif
 //#define FLOOD_COOLANT
 //#define MIST_COOLANT

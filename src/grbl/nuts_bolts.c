@@ -20,6 +20,7 @@
 */
 
 #include "grbl.h"
+#include "stm32f4xx_gpio.h"
 
 
 #define MAX_INT_DIGITS 8 // Maximum number of digits in int32 (and float)
@@ -183,5 +184,11 @@ void set_as_input(GPIO_TypeDef* port, uint32_t pin)
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;
   GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
   GPIO_Init(port, &GPIO_InitStructure);
+}
+
+//set bit to zero
+void disable_pin(GPIO_TypeDef* port, uint32_t pin){
+
+	GPIO_ResetBits(port, pin);
 }
 
