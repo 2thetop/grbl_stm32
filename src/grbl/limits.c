@@ -99,6 +99,10 @@ uint8_t limits_get_state()
   if(GPIO_ReadInputDataBit(LIMY) != RESET) limit_state |= 2;
   if(GPIO_ReadInputDataBit(LIMZ) != RESET) limit_state |= 4;
 
+#ifndef STANDARD_GRBL
+  if(GPIO_ReadInputDataBit(STP_FLG) == RESET) limit_state |= 8;
+#endif
+
   if (bit_isfalse(settings.flags,BITFLAG_INVERT_LIMIT_PINS))
 	  limit_state ^= 0x7;
 

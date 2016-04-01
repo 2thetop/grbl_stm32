@@ -228,7 +228,7 @@ void st_wake_up()
 //    // Enable Stepper Driver Interrupt
 //    TIMSK1 |= (1<<OCIE1A);
 ////   }
-	//TODO:Enable steppers
+
     enable_steppers();
 	TIM_ClearITPendingBit(TIM2, TIM_IT_Update);
     enable_timerint();
@@ -266,8 +266,7 @@ void st_go_idle()
     // Force stepper dwell to lock axes for a defined amount of time to ensure the axes come to a complete
     // stop and not drift from residual inertial forces at the end of the last movement.
     delay_ms(settings.stepper_idle_lock_time);
-    //TODO:Disable steppers
-    //disable_steppers();
+    disable_steppers();
   }
 
   disable_timerint();
@@ -1013,8 +1012,9 @@ void init_stepperpins()
 	set_as_output(STPZ);
 	set_as_output(DIRZ);
 
-	set_as_output(STEPEN);
-	//not using
+#ifdef STANDARD_GRBL
+	set_as_output(STPEN);
+#else
 	set_as_output(SPI1SCK);
 	set_as_output(SPI1MOSI);
 	set_as_input(SPI1MISO);
@@ -1027,9 +1027,8 @@ void init_stepperpins()
 
 	set_dir_pins(dir_port_invert_mask);
 	set_step_pins(step_port_invert_mask);
-	//TODO:Config steppers
-	//config_steppers();
-
+	config_steppers();
+#endif
 }
 
 void  set_dir_pins(uint8_t outbits)
@@ -1141,6 +1140,7 @@ void DMA1_Stream7_IRQHandler(void)
 
 }
 
+#ifndef STANDARD_GRBL
 
 uint32_t spibytes(uint8_t data0,uint8_t data1,uint8_t data2)
 {
@@ -1178,11 +1178,16 @@ uint32_t spibytes(uint8_t data0,uint8_t data1,uint8_t data2)
 	return res;
 
 }
+#endif
 
 void config_steppers()
 {
-	//GPIO_SetBits(STP_RST);
-/*
+
+#ifdef STANDARD_GRBL
+	;
+#else
+	GPIO_SetBits(STP_RST);
+
 	spibytes(0xa8,0xa8,0xa8);  // disable
 
 	spibytes(0xd0,0xd0,0xd0);  // config
@@ -1200,32 +1205,34 @@ void config_steppers()
 	spibytes(floor(ZCURRENT/31),floor(XCURRENT/31),floor(YCURRENT/31));      // 31mA per
 
 	spibytes(0x13,0x13,0x13);  // overcurrent ~3.5A
-	spibytes(0xf,0xf,0xf);*/
-
+	spibytes(0xf,0xf,0xf);
+#endif
 }
 
 void enable_steppers()
 {
-	/*spibytes(0x09,0x09,0x9);
+#ifdef STANDARD_GRBL
+	GPIO_SetBits(STPEN);
+#else
+	spibytes(0x09,0x09,0x9);
 	spibytes(floor(ZCURRENT/31),floor(XCURRENT/31),floor(YCURRENT/31));      // 31mA per
 
 	spibytes(0x13,0x13,0x13);  // overcurrent ~3.5A
 	spibytes(0xf,0xf,0xf);
 
-	spibytes(0xb8,0xb8,0xb8);  // enable Z,X,Y*/
+	spibytes(0xb8,0xb8,0xb8);  // enable Z,X,Y
+#endif
 }
 
 void disable_steppers()
 {
-	//spibytes(0x09,0x09,0x9);
-	//spibytes(floor(ZCURRENT/31/4),floor(XCURRENT/31/4),floor(YCURRENT/31/4));      // 31mA per}
+#ifdef STANDARD_GRBL
+	GPIO_ResetBits(STPEN);
+#else
+	spibytes(0x09,0x09,0x9);
+	spibytes(floor(ZCURRENT/31/4),floor(XCURRENT/31/4),floor(YCURRENT/31/4));      // 31mA per}
 
 	//spibytes(0xa8,0xa8,0xa8);  // disable Z,X,Y
-	disable_pin(DIRX);
-	disable_pin(STPX);
-	disable_pin(DIRY);
-	disable_pin(STPY);
-	disable_pin(STPZ);
-	disable_pin(DIRZ);
+#endif
 }
 
