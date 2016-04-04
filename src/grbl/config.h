@@ -39,7 +39,7 @@
 // Default cpu mappings. Grbl officially supports the Arduino Uno only. Other processor types
 // may exist from user-supplied templates or directly user-defined in cpu_map.h
 //#define CPU_MAP_ATMEGA328P // Arduino Uno CPU
-#define CPU_MAP_STM32F411_NUCLEOS // Arduino Uno CPU
+#define CPU_MAP_STM32F411_NUCLEOS // STM32NUCLEO CPU
 
 // Define realtime command special characters. These characters are 'picked-off' directly from the
 // serial read data stream and are not passed to the grbl line execution parser. Select characters
@@ -75,6 +75,9 @@
 // NOTE: Defaults are set for a traditional 3-axis CNC machine. Z-axis first to clear, followed by X & Y.
 #define HOMING_CYCLE_0 (1<<Z_AXIS)                // REQUIRED: First move Z to clear workspace.
 #define HOMING_CYCLE_1 ((1<<X_AXIS)|(1<<Y_AXIS))  // OPTIONAL: Then move X,Y at the same time.
+//coreXY machine (comment previous)
+//#define HOMING_CYCLE_0 (1<<X_AXIS)
+//#define HOMING_CYCLE_1 (1<<Y_AXIS)
 // #define HOMING_CYCLE_2                         // OPTIONAL: Uncomment and add axes mask to enable
 
 // Number of homing cycles performed after when the machine initially jogs to limit switches.
@@ -150,7 +153,7 @@
 // defined at (http://corexy.com/theory.html). Motors are assumed to positioned and wired exactly as
 // described, if not, motions may move in strange directions. Grbl assumes the CoreXY A and B motors
 // have the same steps per mm internally.
-// #define COREXY // Default disabled. Uncomment to enable.
+//#define COREXY // Default disabled. Uncomment to enable.
 
 // Inverts pin logic of the control command pins. This essentially means when this option is enabled
 // you can use normally-closed switches, rather than the default normally-open switches.

@@ -1,0 +1,37 @@
+[33mcommit 17c9649801b51f0c2be1ea18eda77d57f71a1e2d[m
+Author: voja <milivojevicvoja@yahoo.com>
+Date:   Fri Apr 1 09:27:23 2016 +0200
+
+    standard grbl shield compatability comlepte
+
+[33mcommit 4ca0138f1ac7eade0d4253ba0325b7913bbfdc34[m
+Author: voja <milivojevicvoja@yahoo.com>
+Date:   Thu Mar 31 13:42:04 2016 +0200
+
+    steppers moving on commands from console
+
+[33mcommit 3fa9d48b858ba4fcf9cdb9b53c3e0761a759b725[m
+Author: voja <milivojevicvoja@yahoo.com>
+Date:   Wed Mar 30 09:24:10 2016 +0200
+
+    readme add
+
+[33mcommit 4ff4bfa5858c805cb837df3a4b1a575749bd796a[m
+Author: Lasse Langwadt Christensen <git@fonz.dk>
+Date:   Tue Mar 15 00:44:57 2016 +0100
+
+    second
+
+[33mcommit 295441cfc61763365d3d6e46cbabb1b4adefe3b1[m
+Author: Lasse Langwadt Christensen <git@fonz.dk>
+Date:   Sun Mar 13 23:09:56 2016 +0100
+
+    first
+    
+    first
+
+[33mcommit 14d4f4c31a82ce3d29180d524e8ae4e2afb210d0[m
+Author: Lasse Langwadt Christensen <git@fonz.dk>
+Date:   Sun Mar 13 23:04:27 2016 +0100
+
+    :tada: Added .gitattributes
