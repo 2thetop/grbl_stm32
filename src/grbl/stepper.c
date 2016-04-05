@@ -1212,7 +1212,11 @@ void config_steppers()
 void enable_steppers()
 {
 #ifdef STANDARD_GRBL
+<<<<<<< HEAD
 	GPIO_SetBits(STPEN);
+=======
+	GPIO_ResetBits(STPEN); // active low
+>>>>>>> pin_comp_check
 #else
 	spibytes(0x09,0x09,0x9);
 	spibytes(floor(ZCURRENT/31),floor(XCURRENT/31),floor(YCURRENT/31));      // 31mA per
@@ -1227,7 +1231,11 @@ void enable_steppers()
 void disable_steppers()
 {
 #ifdef STANDARD_GRBL
+<<<<<<< HEAD
 	GPIO_ResetBits(STPEN);
+=======
+	GPIO_SetBits(STPEN); // active low
+>>>>>>> pin_comp_check
 #else
 	spibytes(0x09,0x09,0x9);
 	spibytes(floor(ZCURRENT/31/4),floor(XCURRENT/31/4),floor(YCURRENT/31/4));      // 31mA per}

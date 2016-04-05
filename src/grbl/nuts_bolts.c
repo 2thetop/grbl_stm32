@@ -20,7 +20,6 @@
 */
 
 #include "grbl.h"
-#include "stm32f4xx_gpio.h"
 
 
 #define MAX_INT_DIGITS 8 // Maximum number of digits in int32 (and float)
@@ -126,7 +125,7 @@ void delay_sec(float seconds, uint8_t mode)
 	}
 }
 
-
+#if 0
 // Delays variable defined milliseconds. Compiler compatibility fix for _delay_ms(),
 // which only accepts constants in future compiler releases.
 void delay_ms(uint16_t ms) 
@@ -156,7 +155,7 @@ void delay_us(uint32_t us)
     }
   }
 }
-
+#endif
 
 // Simple hypotenuse computation function.
 float hypot_f(float x, float y) { return(sqrt(x*x + y*y)); }
@@ -184,11 +183,5 @@ void set_as_input(GPIO_TypeDef* port, uint32_t pin)
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;
   GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
   GPIO_Init(port, &GPIO_InitStructure);
-}
-
-//set bit to zero
-void disable_pin(GPIO_TypeDef* port, uint32_t pin){
-
-	GPIO_ResetBits(port, pin);
 }
 

@@ -143,12 +143,19 @@
 #define SAFETY_DOOR_BIT   3  // Uno Analog Pin 1 NOTE: Safety door is shared with feed hold. Enabled by config define.
 #define CONTROL_MASK      ((1<<RESET_BIT)|(1<<FEED_HOLD_BIT)|(1<<CYCLE_START_BIT)|(1<<SAFETY_DOOR_BIT))
 //#define CONTROL_INVERT_MASK   CONTROL_MASK // May be re-defined to only invert certain control pins.
+<<<<<<< HEAD
 #define CONTROL_INVERT_MASK 0 // May be re-defined to only invert certain control pins.
+=======
+#define CONTROL_INVERT_MASK   0 // May be re-defined to only invert certain control pins.
+>>>>>>> pin_comp_check
 
 #define PROBE_BIT       0  // Uno Analog Pin 5
 #define PROBE_MASK      (1<<PROBE_BIT)
 
+<<<<<<< HEAD
 //comment STANDARD_GRBL if you want ot use 3x X-NUCLEO-IHM01A1 shields for driving stepper motors
+=======
+>>>>>>> pin_comp_check
 #define STANDARD_GRBL
 
 #ifdef STANDARD_GRBL
@@ -157,6 +164,7 @@
 	#define DIRY     GPIOB,GPIO_Pin_10
 	#define DIRZ     GPIOA,GPIO_Pin_8
 
+<<<<<<< HEAD
 
 	#define STPX     GPIOA,GPIO_Pin_10
 	#define STPY     GPIOB,GPIO_Pin_3 //
@@ -168,6 +176,24 @@
 
 	#define TESTP GPIOB,GPIO_Pin_8
 
+=======
+	#define STPX     GPIOA,GPIO_Pin_10
+	#define STPY     GPIOB,GPIO_Pin_3
+	#define STPZ     GPIOB,GPIO_Pin_5
+
+	#define STPEN    GPIOA,GPIO_Pin_9
+
+//	#define SPI1SCK  GPIOA,GPIO_Pin_5
+//	#define SPI1MOSI GPIOA,GPIO_Pin_7
+//	#define SPI1MISO GPIOA,GPIO_Pin_6
+//	#define SPI1NSS  GPIOB,GPIO_Pin_6
+
+//	#define STP_RST GPIOA,GPIO_Pin_9
+//	#define STP_FLG GPIOA,GPIO_Pin_10
+
+	#define TESTP GPIOB,GPIO_Pin_8
+
+>>>>>>> pin_comp_check
 	#define LIMX GPIOC,GPIO_Pin_7
 	#define LIMY GPIOB,GPIO_Pin_6
 	#define LIMZ GPIOA,GPIO_Pin_7
@@ -175,6 +201,7 @@
 	#define PROBE GPIOC,GPIO_Pin_0
 
 	#ifndef VARIABLE_SPINDLE
+<<<<<<< HEAD
 	#define SPINDLE_EN   GPIOA,GPIO_Pin_6//GPIOC,GPIO_Pin_1
 	#define SPINDLE_DIR  GPIOA,GPIO_Pin_5//GPIOC,GPIO_Pin_1
 	#endif
@@ -204,6 +231,63 @@
 	#define STP_FLG GPIOA,GPIO_Pin_10
 
 	#define TESTP GPIOB,GPIO_Pin_8
+=======
+	#define SPINDLE_EN   GPIOA,GPIO_Pin_6
+	#define SPINDLE_DIR  GPIOA,GPIO_Pin_5
+	#endif
+
+	#define FLOOD_COOLANT GPIOB,GPIO_Pin_0
+//	#define MIST_COOLANT
+
+	#define RESET_PIN        GPIOA,GPIO_Pin_0
+	#define FEED_HOLD_PIN    GPIOA,GPIO_Pin_1
+	#define CYCLE_START_PIN  GPIOA,GPIO_Pin_4
+//	#define SAFETY_DOOR_PIN
+
+#else
+
+	#define DIRX     GPIOB,GPIO_Pin_5
+	#define STPX     GPIOB,GPIO_Pin_3
+	#define DIRY     GPIOA,GPIO_Pin_8
+	#define STPY     GPIOC,GPIO_Pin_7
+	#define STPZ     GPIOB,GPIO_Pin_10
+	#define DIRZ     GPIOB,GPIO_Pin_4
+
+	#define SPI1SCK  GPIOA,GPIO_Pin_5
+	#define SPI1MOSI GPIOA,GPIO_Pin_7
+	#define SPI1MISO GPIOA,GPIO_Pin_6
+	#define SPI1NSS  GPIOB,GPIO_Pin_6
+
+	#define STP_RST GPIOA,GPIO_Pin_9
+	#define STP_FLG GPIOA,GPIO_Pin_10
+
+	#define TESTP GPIOB,GPIO_Pin_8
+
+	#define LIMX GPIOA,GPIO_Pin_0
+	#define LIMY GPIOA,GPIO_Pin_1
+	#define LIMZ GPIOA,GPIO_Pin_4
+
+	#define PROBE GPIOC,GPIO_Pin_1
+
+	#ifndef VARIABLE_SPINDLE
+	#define SPINDLE_EN   GPIOC,GPIO_Pin_1
+	#define SPINDLE_DIR  GPIOC,GPIO_Pin_1
+	#endif
+	//#define FLOOD_COOLANT
+	//#define MIST_COOLANT
+
+	//#define RESET_PIN
+	//#define FEED_HOLD_PIN
+	//#define CYCLE_START_PIN
+	//#define SAFETY_DOOR_PIN
+
+
+	#define XCURRENT 1500
+	#define YCURRENT 1500
+	#define ZCURRENT  500
+
+#endif
+>>>>>>> pin_comp_check
 
 	#define LIMX GPIOA,GPIO_Pin_0
 	#define LIMY GPIOA,GPIO_Pin_1
