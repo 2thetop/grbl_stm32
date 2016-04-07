@@ -2280,11 +2280,7 @@ Discarded input sections
  .data          0x00000000        0x0 src/grbl/stepper.o
  .text.config_steppers
                 0x00000000       0x10 src/grbl/stepper.o
-<<<<<<< HEAD
- .debug_macro   0x00000000      0x8aa src/grbl/stepper.o
-=======
  .debug_macro   0x00000000      0x8b6 src/grbl/stepper.o
->>>>>>> pin_comp_check
  .debug_macro   0x00000000       0x16 src/grbl/stepper.o
  .debug_macro   0x00000000       0x5e src/grbl/stepper.o
  .debug_macro   0x00000000       0x3b src/grbl/stepper.o
@@ -6813,11 +6809,7 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.
                 0x08000000                g_pfnVectors
                 0x08000198                . = ALIGN (0x4)
 
-<<<<<<< HEAD
-.text           0x0800c000     0xb670
-=======
 .text           0x0800c000     0xbd00
->>>>>>> pin_comp_check
                 0x0800c000                . = ALIGN (0x4)
  *(.text)
  .text          0x0800c000       0xa4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7e-m/fpu/crtbegin.o
@@ -6952,651 +6944,6 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.
  .text.SetSysClock
                 0x0800ccb8       0xf4 src/system_stm32f4xx.o
  .text.coolant_init
-<<<<<<< HEAD
-                0x0800cd58       0x18 src/grbl/coolant_control.o
-                0x0800cd58                coolant_init
- .text.coolant_stop
-                0x0800cd70       0x14 src/grbl/coolant_control.o
-                0x0800cd70                coolant_stop
- .text.coolant_set_state
-                0x0800cd84       0x38 src/grbl/coolant_control.o
-                0x0800cd84                coolant_set_state
- .text.coolant_run
-                0x0800cdbc       0x2c src/grbl/coolant_control.o
-                0x0800cdbc                coolant_run
- .text.gc_init  0x0800cde8       0x34 src/grbl/gcode.o
-                0x0800cde8                gc_init
- .text.gc_sync_position
-                0x0800ce1c       0x18 src/grbl/gcode.o
-                0x0800ce1c                gc_sync_position
- .text.gc_check_same_position
-                0x0800ce34       0x50 src/grbl/gcode.o
- *fill*         0x0800ce84        0x4 
- .text.gc_execute_line
-                0x0800ce88     0x1a4c src/grbl/gcode.o
-                0x0800ce88                gc_execute_line
- .text.limits_disable
-                0x0800e8d4       0x18 src/grbl/limits.o
-                0x0800e8d4                limits_disable
- .text.limits_enable
-                0x0800e8ec       0x18 src/grbl/limits.o
-                0x0800e8ec                limits_enable
- .text.limits_init
-                0x0800e904       0x48 src/grbl/limits.o
-                0x0800e904                limits_init
- .text.limits_get_state
-                0x0800e94c       0x7c src/grbl/limits.o
-                0x0800e94c                limits_get_state
- .text.limitpin_check
-                0x0800e9c8       0x60 src/grbl/limits.o
-                0x0800e9c8                limitpin_check
- .text.limits_go_home
-                0x0800ea28      0x484 src/grbl/limits.o
-                0x0800ea28                limits_go_home
- .text.limits_soft_check
-                0x0800eeac       0xa8 src/grbl/limits.o
-                0x0800eeac                limits_soft_check
- .text.main     0x0800ef54       0x90 src/grbl/main.o
-                0x0800ef54                main
- .text.mc_line  0x0800efe4       0x70 src/grbl/motion_control.o
-                0x0800efe4                mc_line
- *fill*         0x0800f054        0x4 
- .text.mc_arc   0x0800f058      0x528 src/grbl/motion_control.o
-                0x0800f058                mc_arc
- .text.mc_dwell
-                0x0800f580       0x30 src/grbl/motion_control.o
-                0x0800f580                mc_dwell
- .text.mc_homing_cycle
-                0x0800f5b0       0x34 src/grbl/motion_control.o
-                0x0800f5b0                mc_homing_cycle
- .text.mc_probe_cycle
-                0x0800f5e4       0xfc src/grbl/motion_control.o
-                0x0800f5e4                mc_probe_cycle
- .text.mc_reset
-                0x0800f6e0       0x60 src/grbl/motion_control.o
-                0x0800f6e0                mc_reset
- .text.read_float
-                0x0800f740      0x1e0 src/grbl/nuts_bolts.o
-                0x0800f740                read_float
- .text.delay_sec
-                0x0800f920       0x88 src/grbl/nuts_bolts.o
-                0x0800f920                delay_sec
- .text.delay_ms
-                0x0800f9a8       0x24 src/grbl/nuts_bolts.o
-                0x0800f9a8                delay_ms
- .text.hypot_f  0x0800f9cc       0x5c src/grbl/nuts_bolts.o
-                0x0800f9cc                hypot_f
- .text.set_as_output
-                0x0800fa28       0x34 src/grbl/nuts_bolts.o
-                0x0800fa28                set_as_output
- .text.set_as_input
-                0x0800fa5c       0x34 src/grbl/nuts_bolts.o
-                0x0800fa5c                set_as_input
- .text.plan_next_block_index
-                0x0800fa90       0x28 src/grbl/planner.o
-                0x0800fa90                plan_next_block_index
- .text.plan_prev_block_index
-                0x0800fab8       0x28 src/grbl/planner.o
- .text.planner_recalculate
-                0x0800fae0      0x204 src/grbl/planner.o
- .text.plan_reset
-                0x0800fce4       0x40 src/grbl/planner.o
-                0x0800fce4                plan_reset
- .text.plan_discard_current_block
-                0x0800fd24       0x4c src/grbl/planner.o
-                0x0800fd24                plan_discard_current_block
- .text.plan_get_current_block
-                0x0800fd70       0x3c src/grbl/planner.o
-                0x0800fd70                plan_get_current_block
- .text.plan_get_exec_block_exit_speed
-                0x0800fdac       0x70 src/grbl/planner.o
-                0x0800fdac                plan_get_exec_block_exit_speed
- .text.plan_check_full_buffer
-                0x0800fe1c       0x28 src/grbl/planner.o
-                0x0800fe1c                plan_check_full_buffer
- *fill*         0x0800fe44        0x4 
- .text.plan_buffer_line
-                0x0800fe48      0x608 src/grbl/planner.o
-                0x0800fe48                plan_buffer_line
- .text.plan_sync_position
-                0x08010450       0x40 src/grbl/planner.o
-                0x08010450                plan_sync_position
- .text.plan_get_block_buffer_count
-                0x08010490       0x40 src/grbl/planner.o
-                0x08010490                plan_get_block_buffer_count
- .text.plan_cycle_reinitialize
-                0x080104d0       0x20 src/grbl/planner.o
-                0x080104d0                plan_cycle_reinitialize
- .text.printString
-                0x080104f0       0x28 src/grbl/print.o
-                0x080104f0                printString
- .text.printPgmString
-                0x08010518       0x2c src/grbl/print.o
-                0x08010518                printPgmString
- .text.print_unsigned_int8
-                0x08010544       0xb4 src/grbl/print.o
-                0x08010544                print_unsigned_int8
- .text.print_uint8_base2
-                0x080105f8       0x20 src/grbl/print.o
-                0x080105f8                print_uint8_base2
- .text.print_uint8_base10
-                0x08010618       0x3c src/grbl/print.o
-                0x08010618                print_uint8_base10
- .text.printFloat
-                0x08010654      0x154 src/grbl/print.o
-                0x08010654                printFloat
- .text.printFloat_CoordValue
-                0x080107a8       0x64 src/grbl/print.o
-                0x080107a8                printFloat_CoordValue
- *fill*         0x0801080c        0x4 
- .text.printFloat_RateValue
-                0x08010810       0x64 src/grbl/print.o
-                0x08010810                printFloat_RateValue
- .text.printFloat_SettingValue
-                0x08010874       0x1c src/grbl/print.o
-                0x08010874                printFloat_SettingValue
- .text.printFloat_RPMValue
-                0x08010890       0x1c src/grbl/print.o
-                0x08010890                printFloat_RPMValue
- .text.probe_init
-                0x080108ac       0x1c src/grbl/probe.o
-                0x080108ac                probe_init
- .text.probe_configure_invert_mask
-                0x080108c8       0x54 src/grbl/probe.o
-                0x080108c8                probe_configure_invert_mask
- .text.probe_get_state
-                0x0801091c       0x3c src/grbl/probe.o
-                0x0801091c                probe_get_state
- .text.probe_state_monitor
-                0x08010958       0x4c src/grbl/probe.o
-                0x08010958                probe_state_monitor
- .text.protocol_main_loop
-                0x080109a4      0x198 src/grbl/protocol.o
-                0x080109a4                protocol_main_loop
- .text.protocol_buffer_synchronize
-                0x08010b3c       0x30 src/grbl/protocol.o
-                0x08010b3c                protocol_buffer_synchronize
- .text.protocol_auto_cycle_start
-                0x08010b6c       0x10 src/grbl/protocol.o
-                0x08010b6c                protocol_auto_cycle_start
- .text.protocol_execute_realtime
-                0x08010b7c       0x1c src/grbl/protocol.o
-                0x08010b7c                protocol_execute_realtime
- .text.protocol_exec_rt_system
-                0x08010b98      0x2f0 src/grbl/protocol.o
-                0x08010b98                protocol_exec_rt_system
- .text.protocol_exec_rt_suspend
-                0x08010e88      0x110 src/grbl/protocol.o
- .text.report_status_message
-                0x08010f98      0x164 src/grbl/report.o
-                0x08010f98                report_status_message
- .text.report_alarm_message
-                0x080110fc       0x8c src/grbl/report.o
-                0x080110fc                report_alarm_message
- .text.report_feedback_message
-                0x08011188       0xb4 src/grbl/report.o
-                0x08011188                report_feedback_message
- .text.report_init_message
-                0x0801123c       0x14 src/grbl/report.o
-                0x0801123c                report_init_message
- .text.report_grbl_help
-                0x08011250       0x14 src/grbl/report.o
-                0x08011250                report_grbl_help
- .text.report_grbl_settings
-                0x08011264      0x424 src/grbl/report.o
-                0x08011264                report_grbl_settings
- .text.report_probe_parameters
-                0x08011688       0x98 src/grbl/report.o
-                0x08011688                report_probe_parameters
- .text.report_ngc_parameters
-                0x08011720      0x134 src/grbl/report.o
-                0x08011720                report_ngc_parameters
- .text.report_gcode_modes
-                0x08011854      0x220 src/grbl/report.o
-                0x08011854                report_gcode_modes
- .text.report_startup_line
-                0x08011a74       0x40 src/grbl/report.o
-                0x08011a74                report_startup_line
- .text.report_build_info
-                0x08011ab4       0x2c src/grbl/report.o
-                0x08011ab4                report_build_info
- .text.report_realtime_status
-                0x08011ae0      0x3a8 src/grbl/report.o
-                0x08011ae0                report_realtime_status
- .text.serial_get_rx_buffer_count
-                0x08011e88       0x44 src/grbl/serial.o
-                0x08011e88                serial_get_rx_buffer_count
- .text.serial_init
-                0x08011ecc       0xfc src/grbl/serial.o
-                0x08011ecc                serial_init
- .text.serial_write
-                0x08011fc8       0x74 src/grbl/serial.o
-                0x08011fc8                serial_write
- .text.serial_txint
-                0x0801203c       0x6c src/grbl/serial.o
-                0x0801203c                serial_txint
- .text.serial_read
-                0x080120a8       0x54 src/grbl/serial.o
-                0x080120a8                serial_read
- .text.serial_rxint
-                0x080120fc       0xa0 src/grbl/serial.o
-                0x080120fc                serial_rxint
- .text.serial_reset_read_buffer
-                0x0801219c       0x20 src/grbl/serial.o
-                0x0801219c                serial_reset_read_buffer
- .text.USART2_IRQHandler
-                0x080121bc       0x30 src/grbl/serial.o
-                0x080121bc                USART2_IRQHandler
- .text.settings_store_startup_line
-                0x080121ec       0x30 src/grbl/settings.o
-                0x080121ec                settings_store_startup_line
- .text.settings_store_build_info
-                0x0801221c       0x1c src/grbl/settings.o
-                0x0801221c                settings_store_build_info
- .text.settings_write_coord_data
-                0x08012238       0x30 src/grbl/settings.o
-                0x08012238                settings_write_coord_data
- .text.write_global_settings
-                0x08012268       0x20 src/grbl/settings.o
-                0x08012268                write_global_settings
- .text.settings_restore
-                0x08012288      0x18c src/grbl/settings.o
-                0x08012288                settings_restore
- .text.settings_read_startup_line
-                0x08012414       0x4c src/grbl/settings.o
-                0x08012414                settings_read_startup_line
- .text.settings_read_build_info
-                0x08012460       0x34 src/grbl/settings.o
-                0x08012460                settings_read_build_info
- .text.settings_read_coord_data
-                0x08012494       0x50 src/grbl/settings.o
-                0x08012494                settings_read_coord_data
- .text.read_global_settings
-                0x080124e4       0x3c src/grbl/settings.o
-                0x080124e4                read_global_settings
- .text.settings_store_global_setting
-                0x08012520      0x3ac src/grbl/settings.o
-                0x08012520                settings_store_global_setting
- .text.settings_init
-                0x080128cc       0x24 src/grbl/settings.o
-                0x080128cc                settings_init
- .text.get_step_pin_mask
-                0x080128f0       0x2c src/grbl/settings.o
-                0x080128f0                get_step_pin_mask
- .text.get_direction_pin_mask
-                0x0801291c       0x2c src/grbl/settings.o
-                0x0801291c                get_direction_pin_mask
- .text.spindle_init
-                0x08012948       0xa4 src/grbl/spindle_control.o
-                0x08012948                spindle_init
- .text.spindle_stop
-                0x080129ec       0x18 src/grbl/spindle_control.o
-                0x080129ec                spindle_stop
- .text.spindle_set_state
-                0x08012a04       0x5c src/grbl/spindle_control.o
-                0x08012a04                spindle_set_state
- .text.spindle_run
-                0x08012a60       0x34 src/grbl/spindle_control.o
-                0x08012a60                spindle_run
- .text.NVIC_SetPendingIRQ
-                0x08012a94       0x34 src/grbl/stepper.o
- .text.NVIC_ClearPendingIRQ
-                0x08012ac8       0x34 src/grbl/stepper.o
- .text.st_wake_up
-                0x08012afc       0x1c src/grbl/stepper.o
-                0x08012afc                st_wake_up
- .text.st_go_idle
-                0x08012b18       0x50 src/grbl/stepper.o
-                0x08012b18                st_go_idle
- .text.stepper_interrupt1
-                0x08012b68       0x38 src/grbl/stepper.o
-                0x08012b68                stepper_interrupt1
- .text.stepper_interrupt2
-                0x08012ba0      0x29c src/grbl/stepper.o
-                0x08012ba0                stepper_interrupt2
- .text.stepper_pinclr_interrupt
-                0x08012e3c       0x10 src/grbl/stepper.o
-                0x08012e3c                stepper_pinclr_interrupt
- .text.st_generate_step_dir_invert_masks
-                0x08012e4c       0x94 src/grbl/stepper.o
-                0x08012e4c                st_generate_step_dir_invert_masks
- .text.st_reset
-                0x08012ee0       0x80 src/grbl/stepper.o
-                0x08012ee0                st_reset
- .text.stepper_init
-                0x08012f60       0x10 src/grbl/stepper.o
-                0x08012f60                stepper_init
- .text.st_update_plan_block_parameters
-                0x08012f70       0x4c src/grbl/stepper.o
-                0x08012f70                st_update_plan_block_parameters
- .text.st_next_block_index
-                0x08012fbc       0x28 src/grbl/stepper.o
- *fill*         0x08012fe4        0x4 
- .text.st_prep_buffer
-                0x08012fe8      0x9fc src/grbl/stepper.o
-                0x08012fe8                st_prep_buffer
- .text.init_stepperpins
-                0x080139e4       0x68 src/grbl/stepper.o
-                0x080139e4                init_stepperpins
- .text.set_dir_pins
-                0x08013a4c       0x54 src/grbl/stepper.o
-                0x08013a4c                set_dir_pins
- .text.set_step_pins
-                0x08013aa0       0x54 src/grbl/stepper.o
-                0x08013aa0                set_step_pins
- .text.enable_timerint
-                0x08013af4       0x18 src/grbl/stepper.o
-                0x08013af4                enable_timerint
- .text.disable_timerint
-                0x08013b0c       0x18 src/grbl/stepper.o
-                0x08013b0c                disable_timerint
- .text.set_timerperiod
-                0x08013b24       0x1c src/grbl/stepper.o
-                0x08013b24                set_timerperiod
- .text.init_timer
-                0x08013b40       0xbc src/grbl/stepper.o
-                0x08013b40                init_timer
- .text.TIM2_IRQHandler
-                0x08013bfc       0x58 src/grbl/stepper.o
-                0x08013bfc                TIM2_IRQHandler
- .text.DMA1_Stream7_IRQHandler
-                0x08013c54       0x28 src/grbl/stepper.o
-                0x08013c54                DMA1_Stream7_IRQHandler
- .text.enable_steppers
-                0x08013c7c       0x18 src/grbl/stepper.o
-                0x08013c7c                enable_steppers
- .text.disable_steppers
-                0x08013c94       0x18 src/grbl/stepper.o
-                0x08013c94                disable_steppers
- .text.system_init
-                0x08013cac       0x24 src/grbl/system.o
-                0x08013cac                system_init
- .text.system_control_get_state
-                0x08013cd0       0x9c src/grbl/system.o
-                0x08013cd0                system_control_get_state
- .text.control_pin_check
-                0x08013d6c       0x80 src/grbl/system.o
-                0x08013d6c                control_pin_check
- .text.system_check_safety_door_ajar
-                0x08013dec       0x10 src/grbl/system.o
-                0x08013dec                system_check_safety_door_ajar
- .text.system_execute_startup
-                0x08013dfc       0x58 src/grbl/system.o
-                0x08013dfc                system_execute_startup
- .text.system_execute_line
-                0x08013e54      0x4d8 src/grbl/system.o
-                0x08013e54                system_execute_line
- .text.system_convert_axis_steps_to_mpos
-                0x0801432c       0x4c src/grbl/system.o
-                0x0801432c                system_convert_axis_steps_to_mpos
- .text.system_convert_array_steps_to_mpos
-                0x08014378       0x40 src/grbl/system.o
-                0x08014378                system_convert_array_steps_to_mpos
- .text.system_set_exec_state_flag
-                0x080143b8       0x40 src/grbl/system.o
-                0x080143b8                system_set_exec_state_flag
- .text.system_clear_exec_state_flag
-                0x080143f8       0x48 src/grbl/system.o
-                0x080143f8                system_clear_exec_state_flag
- .text.system_set_exec_alarm_flag
-                0x08014440       0x40 src/grbl/system.o
-                0x08014440                system_set_exec_alarm_flag
- .text.system_clear_exec_alarm_flag
-                0x08014480       0x48 src/grbl/system.o
-                0x08014480                system_clear_exec_alarm_flag
- .text.eeprom_get_char
-                0x080144c8       0x40 src/avr/eeprom.o
-                0x080144c8                eeprom_get_char
- .text.eraseflash
-                0x08014508       0x24 src/avr/eeprom.o
-                0x08014508                eraseflash
- .text.progflash
-                0x0801452c       0x4c src/avr/eeprom.o
-                0x0801452c                progflash
- .text.eeprom_put_char
-                0x08014578       0x28 src/avr/eeprom.o
-                0x08014578                eeprom_put_char
- .text.memcpy_to_eeprom_with_checksum
-                0x080145a0       0x70 src/avr/eeprom.o
-                0x080145a0                memcpy_to_eeprom_with_checksum
- .text.memcpy_from_eeprom_with_checksum
-                0x08014610       0x78 src/avr/eeprom.o
-                0x08014610                memcpy_from_eeprom_with_checksum
- .text.NVIC_Init
-                0x08014688       0xc4 StdPeriph_Driver/src/misc.o
-                0x08014688                NVIC_Init
- .text.FLASH_Unlock
-                0x0801474c       0x30 StdPeriph_Driver/src/stm32f4xx_flash.o
-                0x0801474c                FLASH_Unlock
- .text.FLASH_Lock
-                0x0801477c       0x20 StdPeriph_Driver/src/stm32f4xx_flash.o
-                0x0801477c                FLASH_Lock
- .text.FLASH_EraseSector
-                0x0801479c       0xc0 StdPeriph_Driver/src/stm32f4xx_flash.o
-                0x0801479c                FLASH_EraseSector
- .text.FLASH_ProgramByte
-                0x0801485c       0x68 StdPeriph_Driver/src/stm32f4xx_flash.o
-                0x0801485c                FLASH_ProgramByte
- .text.FLASH_GetStatus
-                0x080148c4       0x7c StdPeriph_Driver/src/stm32f4xx_flash.o
-                0x080148c4                FLASH_GetStatus
- .text.FLASH_WaitForLastOperation
-                0x08014940       0x30 StdPeriph_Driver/src/stm32f4xx_flash.o
-                0x08014940                FLASH_WaitForLastOperation
- .text.GPIO_Init
-                0x08014970      0x11c StdPeriph_Driver/src/stm32f4xx_gpio.o
-                0x08014970                GPIO_Init
- .text.GPIO_StructInit
-                0x08014a8c       0x34 StdPeriph_Driver/src/stm32f4xx_gpio.o
-                0x08014a8c                GPIO_StructInit
- .text.GPIO_ReadInputDataBit
-                0x08014ac0       0x34 StdPeriph_Driver/src/stm32f4xx_gpio.o
-                0x08014ac0                GPIO_ReadInputDataBit
- .text.GPIO_SetBits
-                0x08014af4       0x20 StdPeriph_Driver/src/stm32f4xx_gpio.o
-                0x08014af4                GPIO_SetBits
- .text.GPIO_ResetBits
-                0x08014b14       0x20 StdPeriph_Driver/src/stm32f4xx_gpio.o
-                0x08014b14                GPIO_ResetBits
- .text.GPIO_WriteBit
-                0x08014b34       0x30 StdPeriph_Driver/src/stm32f4xx_gpio.o
-                0x08014b34                GPIO_WriteBit
- .text.GPIO_PinAFConfig
-                0x08014b64       0x94 StdPeriph_Driver/src/stm32f4xx_gpio.o
-                0x08014b64                GPIO_PinAFConfig
- .text.RCC_GetClocksFreq
-                0x08014bf8      0x154 StdPeriph_Driver/src/stm32f4xx_rcc.o
-                0x08014bf8                RCC_GetClocksFreq
- .text.RCC_AHB1PeriphClockCmd
-                0x08014d4c       0x40 StdPeriph_Driver/src/stm32f4xx_rcc.o
-                0x08014d4c                RCC_AHB1PeriphClockCmd
- .text.RCC_APB1PeriphClockCmd
-                0x08014d8c       0x40 StdPeriph_Driver/src/stm32f4xx_rcc.o
-                0x08014d8c                RCC_APB1PeriphClockCmd
- .text.RCC_APB1PeriphClockLPModeCmd
-                0x08014dcc       0x40 StdPeriph_Driver/src/stm32f4xx_rcc.o
-                0x08014dcc                RCC_APB1PeriphClockLPModeCmd
- .text.TIM_TimeBaseInit
-                0x08014e0c       0xd8 StdPeriph_Driver/src/stm32f4xx_tim.o
-                0x08014e0c                TIM_TimeBaseInit
- .text.TIM_TimeBaseStructInit
-                0x08014ee4       0x34 StdPeriph_Driver/src/stm32f4xx_tim.o
-                0x08014ee4                TIM_TimeBaseStructInit
- .text.TIM_ARRPreloadConfig
-                0x08014f18       0x40 StdPeriph_Driver/src/stm32f4xx_tim.o
-                0x08014f18                TIM_ARRPreloadConfig
- .text.TIM_Cmd  0x08014f58       0x40 StdPeriph_Driver/src/stm32f4xx_tim.o
-                0x08014f58                TIM_Cmd
- .text.TIM_OC1Init
-                0x08014f98       0xf4 StdPeriph_Driver/src/stm32f4xx_tim.o
-                0x08014f98                TIM_OC1Init
- .text.TIM_OCStructInit
-                0x0801508c       0x44 StdPeriph_Driver/src/stm32f4xx_tim.o
-                0x0801508c                TIM_OCStructInit
- .text.TIM_SetCompare1
-                0x080150d0       0x1c StdPeriph_Driver/src/stm32f4xx_tim.o
-                0x080150d0                TIM_SetCompare1
- .text.TIM_ITConfig
-                0x080150ec       0x48 StdPeriph_Driver/src/stm32f4xx_tim.o
-                0x080150ec                TIM_ITConfig
- .text.TIM_GetITStatus
-                0x08015134       0x54 StdPeriph_Driver/src/stm32f4xx_tim.o
-                0x08015134                TIM_GetITStatus
- .text.TIM_ClearITPendingBit
-                0x08015188       0x24 StdPeriph_Driver/src/stm32f4xx_tim.o
-                0x08015188                TIM_ClearITPendingBit
- .text.USART_Init
-                0x080151ac      0x178 StdPeriph_Driver/src/stm32f4xx_usart.o
-                0x080151ac                USART_Init
- .text.USART_ClockInit
-                0x08015324       0x58 StdPeriph_Driver/src/stm32f4xx_usart.o
-                0x08015324                USART_ClockInit
- .text.USART_ClockStructInit
-                0x0801537c       0x2c StdPeriph_Driver/src/stm32f4xx_usart.o
-                0x0801537c                USART_ClockStructInit
- .text.USART_Cmd
-                0x080153a8       0x40 StdPeriph_Driver/src/stm32f4xx_usart.o
-                0x080153a8                USART_Cmd
- .text.USART_SendData
-                0x080153e8       0x24 StdPeriph_Driver/src/stm32f4xx_usart.o
-                0x080153e8                USART_SendData
- .text.USART_ReceiveData
-                0x0801540c       0x20 StdPeriph_Driver/src/stm32f4xx_usart.o
-                0x0801540c                USART_ReceiveData
- .text.USART_ITConfig
-                0x0801542c       0x90 StdPeriph_Driver/src/stm32f4xx_usart.o
-                0x0801542c                USART_ITConfig
- .text.USART_GetFlagStatus
-                0x080154bc       0x38 StdPeriph_Driver/src/stm32f4xx_usart.o
-                0x080154bc                USART_GetFlagStatus
- .text.__errno  0x080154f4        0xc c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-errno.o)
-                0x080154f4                __errno
- .text.__libc_init_array
-                0x08015500       0x50 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-init.o)
-                0x08015500                __libc_init_array
- .text.memset   0x08015550       0x9c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-memset.o)
-                0x08015550                memset
- .text.startup.register_fini
-                0x080155ec       0x14 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__call_atexit.o)
- .text.atexit   0x08015600        0xc c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-atexit.o)
-                0x08015600                atexit
- .text.__libc_fini_array
-                0x0801560c       0x28 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-fini.o)
-                0x0801560c                __libc_fini_array
- .text.__register_exitproc
-                0x08015634       0xa4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__atexit.o)
-                0x08015634                __register_exitproc
- .text.ceil     0x080156d8      0x120 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_ceil.o)
-                0x080156d8                ceil
- .text.cos      0x080157f8       0xc0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_cos.o)
-                0x080157f8                cos
- .text.floor    0x080158b8      0x120 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_floor.o)
-                0x080158b8                floor
- .text.lround   0x080159d8       0xa8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_lround.o)
-                0x080159d8                lround
- .text.round    0x08015a80       0xb0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_round.o)
-                0x08015a80                round
- .text.sin      0x08015b30       0xc0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_sin.o)
-                0x08015b30                sin
- .text.trunc    0x08015bf0       0x78 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_trunc.o)
-                0x08015bf0                trunc
- .text.atan2    0x08015c68        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-w_atan2.o)
-                0x08015c68                atan2
- .text.sqrt     0x08015c6c       0xbc c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-w_sqrt.o)
-                0x08015c6c                sqrt
- .text.__ieee754_atan2
-                0x08015d28      0x1ec c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-e_atan2.o)
-                0x08015d28                __ieee754_atan2
- *fill*         0x08015f14        0x4 
- .text.__ieee754_rem_pio2
-                0x08015f18      0x44c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-e_rem_pio2.o)
-                0x08015f18                __ieee754_rem_pio2
- .text.__ieee754_sqrt
-                0x08016364      0x1a0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-e_sqrt.o)
-                0x08016364                __ieee754_sqrt
- *fill*         0x08016504        0x4 
- .text.__kernel_cos
-                0x08016508      0x284 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-k_cos.o)
-                0x08016508                __kernel_cos
- *fill*         0x0801678c        0x4 
- .text.__kernel_rem_pio2
-                0x08016790      0x820 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-k_rem_pio2.o)
-                0x08016790                __kernel_rem_pio2
- .text.__kernel_sin
-                0x08016fb0      0x194 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-k_sin.o)
-                0x08016fb0                __kernel_sin
- *fill*         0x08017144        0x4 
- .text.atan     0x08017148      0x378 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_atan.o)
-                0x08017148                atan
- .text.fabs     0x080174c0       0x10 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_fabs.o)
-                0x080174c0                fabs
- .text.__fpclassifyd
-                0x080174d0       0x5c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_fpclassify.o)
-                0x080174d0                __fpclassifyd
- .text.matherr  0x0801752c        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_matherr.o)
-                0x0801752c                matherr
- .text.scalbn   0x08017530      0x10c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_scalbn.o)
-                0x08017530                scalbn
- .text.copysign
-                0x0801763c       0x1c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_copysign.o)
-                0x0801763c                copysign
- *(.glue_7)
- .glue_7        0x08017658        0x0 linker stubs
- *(.glue_7t)
- .glue_7t       0x08017658        0x0 linker stubs
- *(.eh_frame)
- .eh_frame      0x08017658        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7e-m/fpu/crtbegin.o
- *(.init)
- .init          0x08017658        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7e-m/fpu/crti.o
-                0x08017658                _init
- .init          0x0801765c        0x8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7e-m/fpu/crtn.o
- *(.fini)
- .fini          0x08017664        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7e-m/fpu/crti.o
-                0x08017664                _fini
- .fini          0x08017668        0x8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7e-m/fpu/crtn.o
-                0x08017670                . = ALIGN (0x4)
-                0x08017670                _etext = .
-
-.vfp11_veneer   0x08017670        0x0
- .vfp11_veneer  0x08017670        0x0 linker stubs
-
-.v4_bx          0x08017670        0x0
- .v4_bx         0x08017670        0x0 linker stubs
-
-.iplt           0x08017670        0x0
- .iplt          0x08017670        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7e-m/fpu/crtbegin.o
-
-.rodata         0x08017670      0x9d0
-                0x08017670                . = ALIGN (0x4)
- *(.rodata)
- .rodata        0x08017670      0x7a4 src/grbl/report.o
- *(.rodata*)
- .rodata.str1.4
-                0x08017e14        0x2 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-impure.o)
- *fill*         0x08017e16        0x2 
- .rodata._global_impure_ptr
-                0x08017e18        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-impure.o)
-                0x08017e18                _global_impure_ptr
- .rodata.str1.4
-                0x08017e1c        0x8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-w_sqrt.o)
-                                  0x5 (size before relaxing)
- .rodata.npio2_hw
-                0x08017e24       0x80 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-e_rem_pio2.o)
- .rodata.two_over_pi
-                0x08017ea4      0x108 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-e_rem_pio2.o)
- .rodata.init_jk
-                0x08017fac       0x10 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-k_rem_pio2.o)
- *fill*         0x08017fbc        0x4 
- .rodata.PIo2   0x08017fc0       0x40 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-k_rem_pio2.o)
- .rodata.atanlo
-                0x08018000       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_atan.o)
- .rodata.atanhi
-                0x08018020       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_atan.o)
-                0x08018040                . = ALIGN (0x4)
-
-.rel.dyn        0x08018040        0x0
- .rel.iplt      0x08018040        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7e-m/fpu/crtbegin.o
-=======
                 0x0800cdac       0x18 src/grbl/coolant_control.o
                 0x0800cdac                coolant_init
  .text.coolant_stop
@@ -8245,41 +7592,10 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.
 
 .rel.dyn        0x080186e0        0x0
  .rel.iplt      0x080186e0        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7e-m/fpu/crtbegin.o
->>>>>>> pin_comp_check
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-<<<<<<< HEAD
-.ARM            0x08018040        0x0
-                0x08018040                __exidx_start = .
- *(.ARM.exidx*)
-                0x08018040                __exidx_end = .
-
-.preinit_array  0x08018040        0x0
-                0x08018040                PROVIDE (__preinit_array_start, .)
- *(.preinit_array*)
-                0x08018040                PROVIDE (__preinit_array_end, .)
-
-.init_array     0x08018040        0x8
-                0x08018040                PROVIDE (__init_array_start, .)
- *(SORT(.init_array.*))
- .init_array.00000
-                0x08018040        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__call_atexit.o)
- *(.init_array*)
- .init_array    0x08018044        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7e-m/fpu/crtbegin.o
-                0x08018048                PROVIDE (__init_array_end, .)
-
-.fini_array     0x08018048        0x4
-                0x08018048                PROVIDE (__fini_array_start, .)
- *(SORT(.fini_array.*))
- *(.fini_array*)
- .fini_array    0x08018048        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7e-m/fpu/crtbegin.o
-                0x0801804c                PROVIDE (__fini_array_end, .)
-                0x0801804c                _sidata = LOADADDR (.data)
-
-.data           0x20000000      0x448 load address 0x0801804c
-=======
 .ARM            0x080186e0        0x0
                 0x080186e0                __exidx_start = .
  *(.ARM.exidx*)
@@ -8308,7 +7624,6 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.
                 0x080186ec                _sidata = LOADADDR (.data)
 
 .data           0x20000000      0x448 load address 0x080186ec
->>>>>>> pin_comp_check
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -8328,37 +7643,21 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.
  *fill*         0x20000445        0x3 
                 0x20000448                _edata = .
 
-<<<<<<< HEAD
-.jcr            0x20000448        0x0 load address 0x08018494
- .jcr           0x20000448        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7e-m/fpu/crtbegin.o
-
-.tm_clone_table
-                0x20000448        0x0 load address 0x08018494
-=======
 .jcr            0x20000448        0x0 load address 0x08018b34
  .jcr           0x20000448        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7e-m/fpu/crtbegin.o
 
 .tm_clone_table
                 0x20000448        0x0 load address 0x08018b34
->>>>>>> pin_comp_check
  .tm_clone_table
                 0x20000448        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7e-m/fpu/crtbegin.o
  .tm_clone_table
                 0x20000448        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7e-m/fpu/crtend.o
 
-<<<<<<< HEAD
-.igot.plt       0x20000448        0x0 load address 0x08018494
- .igot.plt      0x20000448        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7e-m/fpu/crtbegin.o
-                0x20000448                . = ALIGN (0x4)
-
-.bss            0x20000448     0x1678 load address 0x08018494
-=======
 .igot.plt       0x20000448        0x0 load address 0x08018b34
  .igot.plt      0x20000448        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7e-m/fpu/crtbegin.o
                 0x20000448                . = ALIGN (0x4)
 
 .bss            0x20000448     0x1688 load address 0x08018b34
->>>>>>> pin_comp_check
                 0x20000448                _sbss = .
                 0x20000448                __bss_start__ = _sbss
  *(.bss)
@@ -8403,15 +7702,9 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.
                 0x20001ad0                __bss_end__ = _ebss
 
 ._user_heap_stack
-<<<<<<< HEAD
-                0x20001ac0      0x600 load address 0x08018494
-                0x20001ac0                . = ALIGN (0x8)
-                0x20001ac0                PROVIDE (end, .)
-=======
                 0x20001ad0      0x600 load address 0x08018b34
                 0x20001ad0                . = ALIGN (0x8)
                 0x20001ad0                PROVIDE (end, .)
->>>>>>> pin_comp_check
                 [!provide]                PROVIDE (_end, .)
                 0x20001cd0                . = (. + _Min_Heap_Size)
  *fill*         0x20001ad0      0x200 
@@ -8519,120 +7812,33 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.
                 0x000008c8       0x22 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7e-m/fpu/crtn.o
 OUTPUT(grbl_stm32.elf elf32-littlearm)
 
-<<<<<<< HEAD
-.debug_line     0x00000000     0xe452
+.debug_line     0x00000000     0xe644
  .debug_line    0x00000000       0x7f startup/startup_stm32f411xe.o
  .debug_line    0x0000007f       0x63 src/util/delay.o
- .debug_line    0x000000e2      0x5d0 src/system_stm32f4xx.o
- .debug_line    0x000006b2      0x896 src/grbl/coolant_control.o
- .debug_line    0x00000f48      0xcbf src/grbl/gcode.o
- .debug_line    0x00001c07      0x9d7 src/grbl/limits.o
- .debug_line    0x000025de      0x8b2 src/grbl/main.o
- .debug_line    0x00002e90      0x9ac src/grbl/motion_control.o
- .debug_line    0x0000383c      0x94b src/grbl/nuts_bolts.o
- .debug_line    0x00004187      0xafa src/grbl/planner.o
- .debug_line    0x00004c81      0x9ab src/grbl/print.o
- .debug_line    0x0000562c      0x89c src/grbl/probe.o
- .debug_line    0x00005ec8      0x9bc src/grbl/protocol.o
- .debug_line    0x00006884      0xabe src/grbl/report.o
- .debug_line    0x00007342      0x961 src/grbl/serial.o
- .debug_line    0x00007ca3      0xa6c src/grbl/settings.o
- .debug_line    0x0000870f      0x8cb src/grbl/spindle_control.o
- .debug_line    0x00008fda      0xbfc src/grbl/stepper.o
- .debug_line    0x00009bd6      0xb2a src/grbl/system.o
- .debug_line    0x0000a700      0x72d src/avr/eeprom.o
- .debug_line    0x0000ae2d      0x5d8 StdPeriph_Driver/src/misc.o
- .debug_line    0x0000b405      0x900 StdPeriph_Driver/src/stm32f4xx_flash.o
- .debug_line    0x0000bd05      0x700 StdPeriph_Driver/src/stm32f4xx_gpio.o
- .debug_line    0x0000c405      0x9b5 StdPeriph_Driver/src/stm32f4xx_rcc.o
- .debug_line    0x0000cdba      0xe52 StdPeriph_Driver/src/stm32f4xx_tim.o
- .debug_line    0x0000dc0c      0x846 StdPeriph_Driver/src/stm32f4xx_usart.o
-
-.debug_info     0x00000000     0xb9af
- .debug_info    0x00000000       0x7a startup/startup_stm32f411xe.o
- .debug_info    0x0000007a       0x86 src/util/delay.o
- .debug_info    0x00000100      0x58f src/system_stm32f4xx.o
- .debug_info    0x0000068f      0x339 src/grbl/coolant_control.o
- .debug_info    0x000009c8      0x5ee src/grbl/gcode.o
- .debug_info    0x00000fb6      0x5bd src/grbl/limits.o
- .debug_info    0x00001573      0x34d src/grbl/main.o
- .debug_info    0x000018c0      0x5e8 src/grbl/motion_control.o
- .debug_info    0x00001ea8      0x61c src/grbl/nuts_bolts.o
- .debug_info    0x000024c4      0x703 src/grbl/planner.o
- .debug_info    0x00002bc7      0x50f src/grbl/print.o
- .debug_info    0x000030d6      0x461 src/grbl/probe.o
- .debug_info    0x00003537      0x3db src/grbl/protocol.o
- .debug_info    0x00003912      0x660 src/grbl/report.o
- .debug_info    0x00003f72      0x8d3 src/grbl/serial.o
- .debug_info    0x00004845      0x577 src/grbl/settings.o
- .debug_info    0x00004dbc      0x761 src/grbl/spindle_control.o
- .debug_info    0x0000551d     0x10c6 src/grbl/stepper.o
- .debug_info    0x000065e3      0x7f6 src/grbl/system.o
- .debug_info    0x00006dd9      0x31b src/avr/eeprom.o
- .debug_info    0x000070f4      0x549 StdPeriph_Driver/src/misc.o
- .debug_info    0x0000763d      0x944 StdPeriph_Driver/src/stm32f4xx_flash.o
- .debug_info    0x00007f81      0x625 StdPeriph_Driver/src/stm32f4xx_gpio.o
- .debug_info    0x000085a6      0xdc6 StdPeriph_Driver/src/stm32f4xx_rcc.o
- .debug_info    0x0000936c     0x1c71 StdPeriph_Driver/src/stm32f4xx_tim.o
- .debug_info    0x0000afdd      0x9d2 StdPeriph_Driver/src/stm32f4xx_usart.o
-
-.debug_abbrev   0x00000000     0x277c
- .debug_abbrev  0x00000000       0x12 startup/startup_stm32f411xe.o
- .debug_abbrev  0x00000012       0x7d src/util/delay.o
- .debug_abbrev  0x0000008f      0x11a src/system_stm32f4xx.o
- .debug_abbrev  0x000001a9      0x131 src/grbl/coolant_control.o
- .debug_abbrev  0x000002da      0x184 src/grbl/gcode.o
- .debug_abbrev  0x0000045e      0x1f8 src/grbl/limits.o
- .debug_abbrev  0x00000656      0x105 src/grbl/main.o
- .debug_abbrev  0x0000075b      0x186 src/grbl/motion_control.o
- .debug_abbrev  0x000008e1      0x16d src/grbl/nuts_bolts.o
- .debug_abbrev  0x00000a4e      0x245 src/grbl/planner.o
- .debug_abbrev  0x00000c93      0x129 src/grbl/print.o
- .debug_abbrev  0x00000dbc      0x16d src/grbl/probe.o
- .debug_abbrev  0x00000f29      0x12b src/grbl/protocol.o
- .debug_abbrev  0x00001054      0x1cd src/grbl/report.o
- .debug_abbrev  0x00001221      0x1b4 src/grbl/serial.o
- .debug_abbrev  0x000013d5      0x1a7 src/grbl/settings.o
- .debug_abbrev  0x0000157c      0x1c6 src/grbl/spindle_control.o
- .debug_abbrev  0x00001742      0x2f7 src/grbl/stepper.o
- .debug_abbrev  0x00001a39      0x2f2 src/grbl/system.o
- .debug_abbrev  0x00001d2b      0x138 src/avr/eeprom.o
- .debug_abbrev  0x00001e63      0x14c StdPeriph_Driver/src/misc.o
- .debug_abbrev  0x00001faf      0x176 StdPeriph_Driver/src/stm32f4xx_flash.o
- .debug_abbrev  0x00002125      0x1ac StdPeriph_Driver/src/stm32f4xx_gpio.o
- .debug_abbrev  0x000022d1      0x1c1 StdPeriph_Driver/src/stm32f4xx_rcc.o
- .debug_abbrev  0x00002492      0x18e StdPeriph_Driver/src/stm32f4xx_tim.o
- .debug_abbrev  0x00002620      0x15c StdPeriph_Driver/src/stm32f4xx_usart.o
-
-.debug_aranges  0x00000000      0xe80
-=======
-.debug_line     0x00000000     0xead6
- .debug_line    0x00000000       0x7f startup/startup_stm32f411xe.o
- .debug_line    0x0000007f       0x63 src/util/delay.o
- .debug_line    0x000000e2      0x627 src/system_stm32f4xx.o
- .debug_line    0x00000709      0x8e1 src/grbl/coolant_control.o
- .debug_line    0x00000fea      0xd0a src/grbl/gcode.o
- .debug_line    0x00001cf4      0x9f4 src/grbl/limits.o
- .debug_line    0x000026e8      0x8fd src/grbl/main.o
- .debug_line    0x00002fe5      0x9f7 src/grbl/motion_control.o
- .debug_line    0x000039dc      0x944 src/grbl/nuts_bolts.o
- .debug_line    0x00004320      0xb52 src/grbl/planner.o
- .debug_line    0x00004e72      0x9f6 src/grbl/print.o
- .debug_line    0x00005868      0x8e7 src/grbl/probe.o
- .debug_line    0x0000614f      0xa38 src/grbl/protocol.o
- .debug_line    0x00006b87      0xb0a src/grbl/report.o
- .debug_line    0x00007691      0x9ac src/grbl/serial.o
- .debug_line    0x0000803d      0xab7 src/grbl/settings.o
- .debug_line    0x00008af4      0x916 src/grbl/spindle_control.o
- .debug_line    0x0000940a      0xcb7 src/grbl/stepper.o
- .debug_line    0x0000a0c1      0xb79 src/grbl/system.o
- .debug_line    0x0000ac3a      0x769 src/avr/eeprom.o
- .debug_line    0x0000b3a3      0x605 StdPeriph_Driver/src/misc.o
- .debug_line    0x0000b9a8      0x92d StdPeriph_Driver/src/stm32f4xx_flash.o
- .debug_line    0x0000c2d5      0x72d StdPeriph_Driver/src/stm32f4xx_gpio.o
- .debug_line    0x0000ca02      0x9e2 StdPeriph_Driver/src/stm32f4xx_rcc.o
- .debug_line    0x0000d3e4      0xe7f StdPeriph_Driver/src/stm32f4xx_tim.o
- .debug_line    0x0000e263      0x873 StdPeriph_Driver/src/stm32f4xx_usart.o
+ .debug_line    0x000000e2      0x5fa src/system_stm32f4xx.o
+ .debug_line    0x000006dc      0x896 src/grbl/coolant_control.o
+ .debug_line    0x00000f72      0xcbf src/grbl/gcode.o
+ .debug_line    0x00001c31      0x9f4 src/grbl/limits.o
+ .debug_line    0x00002625      0x8b2 src/grbl/main.o
+ .debug_line    0x00002ed7      0x9ac src/grbl/motion_control.o
+ .debug_line    0x00003883      0x8f9 src/grbl/nuts_bolts.o
+ .debug_line    0x0000417c      0xb07 src/grbl/planner.o
+ .debug_line    0x00004c83      0x9ab src/grbl/print.o
+ .debug_line    0x0000562e      0x89c src/grbl/probe.o
+ .debug_line    0x00005eca      0x9ed src/grbl/protocol.o
+ .debug_line    0x000068b7      0xabf src/grbl/report.o
+ .debug_line    0x00007376      0x961 src/grbl/serial.o
+ .debug_line    0x00007cd7      0xa6c src/grbl/settings.o
+ .debug_line    0x00008743      0x8cb src/grbl/spindle_control.o
+ .debug_line    0x0000900e      0xc6c src/grbl/stepper.o
+ .debug_line    0x00009c7a      0xb2e src/grbl/system.o
+ .debug_line    0x0000a7a8      0x769 src/avr/eeprom.o
+ .debug_line    0x0000af11      0x605 StdPeriph_Driver/src/misc.o
+ .debug_line    0x0000b516      0x92d StdPeriph_Driver/src/stm32f4xx_flash.o
+ .debug_line    0x0000be43      0x72d StdPeriph_Driver/src/stm32f4xx_gpio.o
+ .debug_line    0x0000c570      0x9e2 StdPeriph_Driver/src/stm32f4xx_rcc.o
+ .debug_line    0x0000cf52      0xe7f StdPeriph_Driver/src/stm32f4xx_tim.o
+ .debug_line    0x0000ddd1      0x873 StdPeriph_Driver/src/stm32f4xx_usart.o
 
 .debug_info     0x00000000     0xbb48
  .debug_info    0x00000000       0x89 startup/startup_stm32f411xe.o
@@ -8691,7 +7897,6 @@ OUTPUT(grbl_stm32.elf elf32-littlearm)
  .debug_abbrev  0x00002654      0x15c StdPeriph_Driver/src/stm32f4xx_usart.o
 
 .debug_aranges  0x00000000      0xe78
->>>>>>> pin_comp_check
  .debug_aranges
                 0x00000000       0x28 startup/startup_stm32f411xe.o
  .debug_aranges
@@ -8727,27 +7932,6 @@ OUTPUT(grbl_stm32.elf elf32-littlearm)
  .debug_aranges
                 0x000004d0       0x38 src/grbl/spindle_control.o
  .debug_aranges
-<<<<<<< HEAD
-                0x00000520       0xe0 src/grbl/stepper.o
- .debug_aranges
-                0x00000600       0x78 src/grbl/system.o
- .debug_aranges
-                0x00000678       0x48 src/avr/eeprom.o
- .debug_aranges
-                0x000006c0       0x40 StdPeriph_Driver/src/misc.o
- .debug_aranges
-                0x00000700      0x158 StdPeriph_Driver/src/stm32f4xx_flash.o
- .debug_aranges
-                0x00000858       0x88 StdPeriph_Driver/src/stm32f4xx_gpio.o
- .debug_aranges
-                0x000008e0      0x1a8 StdPeriph_Driver/src/stm32f4xx_rcc.o
- .debug_aranges
-                0x00000a88      0x2f8 StdPeriph_Driver/src/stm32f4xx_tim.o
- .debug_aranges
-                0x00000d80      0x100 StdPeriph_Driver/src/stm32f4xx_usart.o
-
-.debug_ranges   0x00000000      0xd68
-=======
                 0x00000508       0xf0 src/grbl/stepper.o
  .debug_aranges
                 0x000005f8       0x78 src/grbl/system.o
@@ -8767,7 +7951,6 @@ OUTPUT(grbl_stm32.elf elf32-littlearm)
                 0x00000d78      0x100 StdPeriph_Driver/src/stm32f4xx_usart.o
 
 .debug_ranges   0x00000000      0xd60
->>>>>>> pin_comp_check
  .debug_ranges  0x00000000       0x20 startup/startup_stm32f411xe.o
  .debug_ranges  0x00000020       0x18 src/util/delay.o
  .debug_ranges  0x00000038       0x20 src/system_stm32f4xx.o
@@ -8776,166 +7959,6 @@ OUTPUT(grbl_stm32.elf elf32-littlearm)
  .debug_ranges  0x000000c8       0x40 src/grbl/limits.o
  .debug_ranges  0x00000108       0x10 src/grbl/main.o
  .debug_ranges  0x00000118       0x58 src/grbl/motion_control.o
-<<<<<<< HEAD
- .debug_ranges  0x00000170       0x48 src/grbl/nuts_bolts.o
- .debug_ranges  0x000001b8       0x70 src/grbl/planner.o
- .debug_ranges  0x00000228       0x68 src/grbl/print.o
- .debug_ranges  0x00000290       0x28 src/grbl/probe.o
- .debug_ranges  0x000002b8       0x38 src/grbl/protocol.o
- .debug_ranges  0x000002f0       0x70 src/grbl/report.o
- .debug_ranges  0x00000360       0x50 src/grbl/serial.o
- .debug_ranges  0x000003b0       0x90 src/grbl/settings.o
- .debug_ranges  0x00000440       0x28 src/grbl/spindle_control.o
- .debug_ranges  0x00000468      0x100 src/grbl/stepper.o
- .debug_ranges  0x00000568       0x68 src/grbl/system.o
- .debug_ranges  0x000005d0       0x38 src/avr/eeprom.o
- .debug_ranges  0x00000608       0x30 StdPeriph_Driver/src/misc.o
- .debug_ranges  0x00000638      0x148 StdPeriph_Driver/src/stm32f4xx_flash.o
- .debug_ranges  0x00000780       0x78 StdPeriph_Driver/src/stm32f4xx_gpio.o
- .debug_ranges  0x000007f8      0x198 StdPeriph_Driver/src/stm32f4xx_rcc.o
- .debug_ranges  0x00000990      0x2e8 StdPeriph_Driver/src/stm32f4xx_tim.o
- .debug_ranges  0x00000c78       0xf0 StdPeriph_Driver/src/stm32f4xx_usart.o
-
-.debug_macro    0x00000000    0x13c45
- .debug_macro   0x00000000       0x17 src/util/delay.o
- .debug_macro   0x00000017      0x8aa src/util/delay.o
- .debug_macro   0x000008c1      0x196 src/system_stm32f4xx.o
- .debug_macro   0x00000a57       0x65 src/system_stm32f4xx.o
- .debug_macro   0x00000abc       0x3b src/system_stm32f4xx.o
- .debug_macro   0x00000af7       0x44 src/system_stm32f4xx.o
- .debug_macro   0x00000b3b       0xfd src/system_stm32f4xx.o
- .debug_macro   0x00000c38      0x1df src/system_stm32f4xx.o
- .debug_macro   0x00000e17       0x2d src/system_stm32f4xx.o
- .debug_macro   0x00000e44       0x26 src/system_stm32f4xx.o
- .debug_macro   0x00000e6a      0xd39 src/system_stm32f4xx.o
- .debug_macro   0x00001ba3     0x7ce5 src/system_stm32f4xx.o
- .debug_macro   0x00009888      0x44f src/system_stm32f4xx.o
- .debug_macro   0x00009cd7       0xb2 src/system_stm32f4xx.o
- .debug_macro   0x00009d89      0x477 src/system_stm32f4xx.o
- .debug_macro   0x0000a200       0xae src/system_stm32f4xx.o
- .debug_macro   0x0000a2ae      0x41c src/system_stm32f4xx.o
- .debug_macro   0x0000a6ca      0x2e6 src/system_stm32f4xx.o
- .debug_macro   0x0000a9b0      0x2ba src/system_stm32f4xx.o
- .debug_macro   0x0000ac6a       0x64 src/system_stm32f4xx.o
- .debug_macro   0x0000acce       0xeb src/system_stm32f4xx.o
- .debug_macro   0x0000adb9      0x642 src/system_stm32f4xx.o
- .debug_macro   0x0000b3fb      0x57b src/system_stm32f4xx.o
- .debug_macro   0x0000b976      0x342 src/system_stm32f4xx.o
- .debug_macro   0x0000bcb8      0x36c src/system_stm32f4xx.o
- .debug_macro   0x0000c024       0xf0 src/system_stm32f4xx.o
- .debug_macro   0x0000c114      0x73b src/system_stm32f4xx.o
- .debug_macro   0x0000c84f      0x223 src/system_stm32f4xx.o
- .debug_macro   0x0000ca72       0x34 src/system_stm32f4xx.o
- .debug_macro   0x0000caa6       0x82 src/system_stm32f4xx.o
- .debug_macro   0x0000cb28       0x10 src/system_stm32f4xx.o
- .debug_macro   0x0000cb38       0x35 src/system_stm32f4xx.o
- .debug_macro   0x0000cb6d      0x384 src/grbl/coolant_control.o
- .debug_macro   0x0000cef1       0x16 src/grbl/coolant_control.o
- .debug_macro   0x0000cf07       0x82 src/grbl/coolant_control.o
- .debug_macro   0x0000cf89      0x45d src/grbl/coolant_control.o
- .debug_macro   0x0000d3e6      0x311 src/grbl/coolant_control.o
- .debug_macro   0x0000d6f7       0x16 src/grbl/coolant_control.o
- .debug_macro   0x0000d70d       0x10 src/grbl/coolant_control.o
- .debug_macro   0x0000d71d       0xa2 src/grbl/coolant_control.o
- .debug_macro   0x0000d7bf      0x104 src/grbl/coolant_control.o
- .debug_macro   0x0000d8c3      0x1e1 src/grbl/coolant_control.o
- .debug_macro   0x0000daa4       0x10 src/grbl/coolant_control.o
- .debug_macro   0x0000dab4       0x22 src/grbl/coolant_control.o
- .debug_macro   0x0000dad6       0xf4 src/grbl/coolant_control.o
- .debug_macro   0x0000dbca       0xa0 src/grbl/coolant_control.o
- .debug_macro   0x0000dc6a       0xc4 src/grbl/coolant_control.o
- .debug_macro   0x0000dd2e       0xe8 src/grbl/coolant_control.o
- .debug_macro   0x0000de16       0xca src/grbl/coolant_control.o
- .debug_macro   0x0000dee0       0xfd src/grbl/coolant_control.o
- .debug_macro   0x0000dfdd      0x1b5 src/grbl/coolant_control.o
- .debug_macro   0x0000e192       0x16 src/grbl/coolant_control.o
- .debug_macro   0x0000e1a8       0x1c src/grbl/coolant_control.o
- .debug_macro   0x0000e1c4       0x16 src/grbl/coolant_control.o
- .debug_macro   0x0000e1da       0x10 src/grbl/coolant_control.o
- .debug_macro   0x0000e1ea      0x118 src/grbl/coolant_control.o
- .debug_macro   0x0000e302       0x1c src/grbl/coolant_control.o
- .debug_macro   0x0000e31e       0x10 src/grbl/coolant_control.o
- .debug_macro   0x0000e32e      0x3a8 src/grbl/gcode.o
- .debug_macro   0x0000e6d6      0x390 src/grbl/limits.o
- .debug_macro   0x0000ea66      0x384 src/grbl/main.o
- .debug_macro   0x0000edea      0x384 src/grbl/motion_control.o
- .debug_macro   0x0000f16e      0x38e src/grbl/nuts_bolts.o
- .debug_macro   0x0000f4fc      0x38a src/grbl/planner.o
- .debug_macro   0x0000f886      0x384 src/grbl/print.o
- .debug_macro   0x0000fc0a      0x384 src/grbl/probe.o
- .debug_macro   0x0000ff8e      0x396 src/grbl/protocol.o
- .debug_macro   0x00010324      0x384 src/grbl/report.o
- .debug_macro   0x000106a8      0x3f6 src/grbl/serial.o
- .debug_macro   0x00010a9e      0x384 src/grbl/settings.o
- .debug_macro   0x00010e22      0x384 src/grbl/spindle_control.o
- .debug_macro   0x000111a6      0x3cc src/grbl/stepper.o
- .debug_macro   0x00011572      0x384 src/grbl/system.o
- .debug_macro   0x000118f6      0x243 src/avr/eeprom.o
- .debug_macro   0x00011b39      0x182 StdPeriph_Driver/src/misc.o
- .debug_macro   0x00011cbb       0x7c StdPeriph_Driver/src/misc.o
- .debug_macro   0x00011d37      0x182 StdPeriph_Driver/src/stm32f4xx_flash.o
- .debug_macro   0x00011eb9      0x416 StdPeriph_Driver/src/stm32f4xx_flash.o
- .debug_macro   0x000122cf      0x180 StdPeriph_Driver/src/stm32f4xx_gpio.o
- .debug_macro   0x0001244f      0x2e0 StdPeriph_Driver/src/stm32f4xx_gpio.o
- .debug_macro   0x0001272f      0x246 StdPeriph_Driver/src/stm32f4xx_rcc.o
- .debug_macro   0x00012975      0x63c StdPeriph_Driver/src/stm32f4xx_rcc.o
- .debug_macro   0x00012fb1      0x1aa StdPeriph_Driver/src/stm32f4xx_tim.o
- .debug_macro   0x0001315b      0x735 StdPeriph_Driver/src/stm32f4xx_tim.o
- .debug_macro   0x00013890      0x198 StdPeriph_Driver/src/stm32f4xx_usart.o
- .debug_macro   0x00013a28      0x21d StdPeriph_Driver/src/stm32f4xx_usart.o
-
-.debug_str      0x00000000    0x5cb75
- .debug_str     0x00000000     0x2560 src/util/delay.o
-                               0x2573 (size before relaxing)
- .debug_str     0x00002560    0x4ef74 src/system_stm32f4xx.o
-                              0x5164c (size before relaxing)
- .debug_str     0x000514d4     0x6ff9 src/grbl/coolant_control.o
-                              0x584a3 (size before relaxing)
- .debug_str     0x000584cd      0x2bb src/grbl/gcode.o
-                              0x586db (size before relaxing)
- .debug_str     0x00058788      0x270 src/grbl/limits.o
-                              0x586da (size before relaxing)
- .debug_str     0x000589f8       0x25 src/grbl/main.o
-                              0x5854e (size before relaxing)
- .debug_str     0x00058a1d      0x158 src/grbl/motion_control.o
-                              0x586d1 (size before relaxing)
- .debug_str     0x00058b75      0x1bc src/grbl/nuts_bolts.o
-                              0x58690 (size before relaxing)
- .debug_str     0x00058d31      0x2b9 src/grbl/planner.o
-                              0x58874 (size before relaxing)
- .debug_str     0x00058fea      0x10a src/grbl/print.o
-                              0x585e9 (size before relaxing)
- .debug_str     0x000590f4       0x71 src/grbl/probe.o
-                              0x585f5 (size before relaxing)
- .debug_str     0x00059165      0x120 src/grbl/protocol.o
-                              0x585f1 (size before relaxing)
- .debug_str     0x00059285      0x176 src/grbl/report.o
-                              0x58797 (size before relaxing)
- .debug_str     0x000593fb      0x8c0 src/grbl/serial.o
-                              0x58e84 (size before relaxing)
- .debug_str     0x00059cbb      0x17d src/grbl/settings.o
-                              0x58694 (size before relaxing)
- .debug_str     0x00059e38      0x20b src/grbl/spindle_control.o
-                              0x58804 (size before relaxing)
- .debug_str     0x0005a043      0x61d src/grbl/stepper.o
-                              0x59217 (size before relaxing)
- .debug_str     0x0005a660      0x1ab src/grbl/system.o
-                              0x5874e (size before relaxing)
- .debug_str     0x0005a80b      0x163 src/avr/eeprom.o
-                              0x55703 (size before relaxing)
- .debug_str     0x0005a96e      0x142 StdPeriph_Driver/src/misc.o
-                              0x51674 (size before relaxing)
- .debug_str     0x0005aab0      0x421 StdPeriph_Driver/src/stm32f4xx_flash.o
-                              0x5193e (size before relaxing)
- .debug_str     0x0005aed1      0x182 StdPeriph_Driver/src/stm32f4xx_gpio.o
-                              0x5171c (size before relaxing)
- .debug_str     0x0005b053      0xc11 StdPeriph_Driver/src/stm32f4xx_rcc.o
-                              0x521b3 (size before relaxing)
- .debug_str     0x0005bc64      0xaa4 StdPeriph_Driver/src/stm32f4xx_tim.o
-                              0x52113 (size before relaxing)
- .debug_str     0x0005c708      0x46d StdPeriph_Driver/src/stm32f4xx_usart.o
-                              0x51a2f (size before relaxing)
-=======
  .debug_ranges  0x00000170       0x30 src/grbl/nuts_bolts.o
  .debug_ranges  0x000001a0       0x70 src/grbl/planner.o
  .debug_ranges  0x00000210       0x68 src/grbl/print.o
@@ -9046,40 +8069,40 @@ OUTPUT(grbl_stm32.elf elf32-littlearm)
 .debug_str      0x00000000    0x5cd21
  .debug_str     0x00000000     0x2592 src/util/delay.o
                                0x25a5 (size before relaxing)
- .debug_str     0x00002592    0x4ef9d src/system_stm32f4xx.o
-                              0x516b6 (size before relaxing)
- .debug_str     0x0005152f     0x709a src/grbl/coolant_control.o
-                              0x58562 (size before relaxing)
- .debug_str     0x000585c9      0x2bb src/grbl/gcode.o
-                              0x5879a (size before relaxing)
- .debug_str     0x00058884      0x2b6 src/grbl/limits.o
+ .debug_str     0x00002592    0x4efd1 src/system_stm32f4xx.o
+                              0x516a7 (size before relaxing)
+ .debug_str     0x00051563     0x709a src/grbl/coolant_control.o
+                              0x58553 (size before relaxing)
+ .debug_str     0x000585fd      0x2bb src/grbl/gcode.o
+                              0x5878b (size before relaxing)
+ .debug_str     0x000588b8      0x282 src/grbl/limits.o
                               0x5879c (size before relaxing)
  .debug_str     0x00058b3a       0x25 src/grbl/main.o
-                              0x5860d (size before relaxing)
+                              0x585fe (size before relaxing)
  .debug_str     0x00058b5f      0x158 src/grbl/motion_control.o
-                              0x58790 (size before relaxing)
+                              0x58781 (size before relaxing)
  .debug_str     0x00058cb7      0x1b0 src/grbl/nuts_bolts.o
-                              0x58731 (size before relaxing)
+                              0x58722 (size before relaxing)
  .debug_str     0x00058e67      0x2b9 src/grbl/planner.o
-                              0x58933 (size before relaxing)
+                              0x58924 (size before relaxing)
  .debug_str     0x00059120      0x10a src/grbl/print.o
-                              0x586a8 (size before relaxing)
+                              0x58699 (size before relaxing)
  .debug_str     0x0005922a       0x71 src/grbl/probe.o
-                              0x586b4 (size before relaxing)
+                              0x586a5 (size before relaxing)
  .debug_str     0x0005929b      0x140 src/grbl/protocol.o
-                              0x58821 (size before relaxing)
+                              0x58812 (size before relaxing)
  .debug_str     0x000593db      0x176 src/grbl/report.o
-                              0x58856 (size before relaxing)
+                              0x58847 (size before relaxing)
  .debug_str     0x00059551      0x8c0 src/grbl/serial.o
-                              0x58f43 (size before relaxing)
+                              0x58f34 (size before relaxing)
  .debug_str     0x00059e11      0x17d src/grbl/settings.o
-                              0x58753 (size before relaxing)
+                              0x58744 (size before relaxing)
  .debug_str     0x00059f8e      0x20b src/grbl/spindle_control.o
-                              0x588c3 (size before relaxing)
+                              0x588b4 (size before relaxing)
  .debug_str     0x0005a199      0x673 src/grbl/stepper.o
-                              0x59354 (size before relaxing)
+                              0x59345 (size before relaxing)
  .debug_str     0x0005a80c      0x1ab src/grbl/system.o
-                              0x5880d (size before relaxing)
+                              0x587fe (size before relaxing)
  .debug_str     0x0005a9b7      0x163 src/avr/eeprom.o
                               0x55716 (size before relaxing)
  .debug_str     0x0005ab1a      0x142 StdPeriph_Driver/src/misc.o
@@ -9094,7 +8117,6 @@ OUTPUT(grbl_stm32.elf elf32-littlearm)
                               0x52126 (size before relaxing)
  .debug_str     0x0005c8b4      0x46d StdPeriph_Driver/src/stm32f4xx_usart.o
                               0x51a42 (size before relaxing)
->>>>>>> pin_comp_check
 
 .comment        0x00000000       0x6e
  .comment       0x00000000       0x6e src/util/delay.o
@@ -9124,41 +8146,6 @@ OUTPUT(grbl_stm32.elf elf32-littlearm)
  .comment       0x0000006e       0x6f StdPeriph_Driver/src/stm32f4xx_tim.o
  .comment       0x0000006e       0x6f StdPeriph_Driver/src/stm32f4xx_usart.o
 
-<<<<<<< HEAD
-.debug_frame    0x00000000     0x3b18
- .debug_frame   0x00000000       0x5c src/util/delay.o
- .debug_frame   0x0000005c       0x74 src/system_stm32f4xx.o
- .debug_frame   0x000000d0       0x90 src/grbl/coolant_control.o
- .debug_frame   0x00000160       0xa4 src/grbl/gcode.o
- .debug_frame   0x00000204      0x104 src/grbl/limits.o
- .debug_frame   0x00000308       0x2c src/grbl/main.o
- .debug_frame   0x00000334      0x108 src/grbl/motion_control.o
- .debug_frame   0x0000043c      0x13c src/grbl/nuts_bolts.o
- .debug_frame   0x00000578      0x1dc src/grbl/planner.o
- .debug_frame   0x00000754      0x1d0 src/grbl/print.o
- .debug_frame   0x00000924       0x94 src/grbl/probe.o
- .debug_frame   0x000009b8       0xcc src/grbl/protocol.o
- .debug_frame   0x00000a84      0x1d8 src/grbl/report.o
- .debug_frame   0x00000c5c      0x154 src/grbl/serial.o
- .debug_frame   0x00000db0      0x208 src/grbl/settings.o
- .debug_frame   0x00000fb8       0x98 src/grbl/spindle_control.o
- .debug_frame   0x00001050      0x344 src/grbl/stepper.o
- .debug_frame   0x00001394      0x1d0 src/grbl/system.o
- .debug_frame   0x00001564       0xec src/avr/eeprom.o
- .debug_frame   0x00001650       0xd8 StdPeriph_Driver/src/misc.o
- .debug_frame   0x00001728      0x5b4 StdPeriph_Driver/src/stm32f4xx_flash.o
- .debug_frame   0x00001cdc      0x23c StdPeriph_Driver/src/stm32f4xx_gpio.o
- .debug_frame   0x00001f18      0x7c4 StdPeriph_Driver/src/stm32f4xx_rcc.o
- .debug_frame   0x000026dc      0xe54 StdPeriph_Driver/src/stm32f4xx_tim.o
- .debug_frame   0x00003530      0x490 StdPeriph_Driver/src/stm32f4xx_usart.o
- .debug_frame   0x000039c0       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-errno.o)
- .debug_frame   0x000039e0       0x2c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-init.o)
- .debug_frame   0x00003a0c       0x34 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-memset.o)
- .debug_frame   0x00003a40       0x50 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__call_atexit.o)
- .debug_frame   0x00003a90       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-atexit.o)
- .debug_frame   0x00003ab0       0x34 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-fini.o)
- .debug_frame   0x00003ae4       0x34 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__atexit.o)
-=======
 .debug_frame    0x00000000     0x3b00
  .debug_frame   0x00000000       0x5c src/util/delay.o
  .debug_frame   0x0000005c       0x7c src/system_stm32f4xx.o
@@ -9192,4 +8179,3 @@ OUTPUT(grbl_stm32.elf elf32-littlearm)
  .debug_frame   0x00003a78       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-atexit.o)
  .debug_frame   0x00003a98       0x34 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-fini.o)
  .debug_frame   0x00003acc       0x34 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libc.a(lib_a-__atexit.o)
->>>>>>> pin_comp_check
