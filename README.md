@@ -17,30 +17,28 @@ All documentation on this project, how to compile code, and what to change for d
 
 ### Diferent versions
 This project can be used with diferente hardware setings. Here are presented several versions with compiled **.elf** files just to download to the Nucleo board.
- ##### 1. NUCLEO STM + 3x ST Stepper drivers
- Hardware:
+
+##### 1. NUCLEO STM + 3x ST Stepper drivers
+  Hardware:
  - [NUCLEO-F411RE][BOARD_LINK]
  - 3x [X-NUCLEO-IHM01A1][STM_SHIELD_LINK]
 
-Binary:
-- download here
+Binary: download here
 
- ##### 2. NUCLEO STM + GRBL shield
+##### 2. NUCLEO STM + GRBL shield
   Hardware:
  - [NUCLEO-F411RE][BOARD_LINK]
  - [Arduino CNC Shield][ARDUINO_SHIELD_LINK]
 
-Binary:
-- download here
+Binary: download here
 
- ##### 3. NUCLEO STM + GRBL shield (COREXY)
+##### 3. NUCLEO STM + GRBL shield (COREXY)
   Hardware:
  - [NUCLEO-F411RE][BOARD_LINK]
  - [Arduino CNC Shield][ARDUINO_SHIELD_LINK]
  - [PreciseXY][PRECISEXY_LINK]
 
-Binary:
-- download here
+Binary: download here
 
 ### Version
 1.0.0
