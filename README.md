@@ -15,8 +15,8 @@ Reasons for choosing open Nucleo environment are:
 ### Documentation
 All documentation on this project, how to compile code, and what to change for different hardware setups, can be found on project [Wiki][WIKI_LINK] 
 
-### Diferent versions
-This project can be used with diferente hardware setings. Here are presented several versions with compiled **.elf** files just to download to the Nucleo board.
+### Different versions
+This project can be used with differente hardware setings. Here are presented several versions with compiled **.elf** files just to download to the Nucleo board.
 
 ##### 1. NUCLEO STM + 3x ST Stepper drivers
   Hardware:
